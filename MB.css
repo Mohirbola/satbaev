@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,600');
+h1{
+  text-align: center;
+  justify-content: center;
+}
+p{
+  text-align: center;
+  justify-content: center;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100%;
+}
+a{
+  text-decoration: none;
+  outline: 0;
+}
+a{
+  color: currentColor;
+  transition: .2s ease-in-out;
+}
+ h2, h3, h4{
+  margin: 0;
+}
+ul{
+  padding: 0;
+  list-style: none;
+}
+img{
+  align-content: center;
+  vertical-align: middle;
+  height: auto;
+  width: 20%;
+}
+.page{
+  width: 100%;
+  height: 100vh;
+  background: #fdfdfd;
+  font-family: 'Encode Sans Condensed', sans-serif;
+  font-weight: 600;
+  letter-spacing: .03em;
+  color: #212121;
+}
+.header{
+  font-size: 20px;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  background: #666;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.main{
+  padding: 70px 20px 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.clr{
+  clear: both;
+}
+.cont1{
+  justify-content: center;
+  width: 15%;
+  height: 40%;
+  background-image: url(https://i.gifer.com/embedded/download/NPHI.gif);
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+ 
+  
+  
+}
+.cont{
+	text-align: center;
+	border: 1px solid black;
+	justify-content: center;
+	float: left;
+	border-radius: 10px;
+	margin-left: 30px;
+	font-size: 30px;
+	margin-top: 16%;
+	width: 28%;
+	height: 60%;
+	background-image: url(https://i.gifer.com/embedded/download/NPHI.gif);
+	background-size: cover;
+	background-position: center;
+	color: #ffffff;
+	
+	
+	
+}
+.contmain{
+	
+	width: 100%;
+	height: 60%;
+
+}
+
+
+
+
+
+.main2{
+    font-size: 20px;
+    
+    width: 100%;
+    height: 100%;
+    margin-top: auto;
+
+    color: #000;
+
+}
+.main1 h1{
+  margin-top: 10%;
+  text-align: center;
+}
+main > div{
+  margin: auto;
+  max-width: 600px;
+}
+p{
+  line-height: 1.5;
+  font-weight: 200;
+  margin: 20px 0;
+}
+#nav-container{
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  pointer-events: none;
+}
+.bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 70px);
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s;
+  background: #000;
+}
+#nav-container:focus-within .bg{
+  visibility: visible;
+
+}
+.button{
+  
+  margin-top: -65px;
+  display: flex;
+  flex-direction: column;
+ 
+  z-index: 1;
+  border: 0;
+  background: transparent;
+  border-radius: 0;
+  height: 70px;
+  width: 30px;
+  cursor: pointer;
+  pointer-events: auto;
+  margin-left: 5px;
+  touch-action: manipulation;
+ 
+}
+.icon-bar{
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #000000;
+  transition: .3s;
+}
+.icon-bar + .icon-bar{
+  margin-top: 5px;
+}
+#nav-container:focus-within .button{
+  pointer-events: none;
+}
+#nav-container:focus-within .icon-bar:nth-of-type(1){
+  transform: translate3d(0,8px,0) rotate(45deg);
+}
+#nav-container:focus-within .icon-bar:nth-of-type(2){
+  opacity: 0;
+}
+#nav-container:focus-within .icon-bar:nth-of-type(3){
+  transform: translate3d(0,-8px,0) rotate(-45deg);
+}
+#nav-content{
+  margin-top: -43px;
+  padding: 20px;
+  width: 90%;
+  max-width: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #ececec;
+  pointer-events: auto;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  
+  transform: translateX(-100%);
+  transition: transform .7s;
+  will-change: transform;
+  contain: paint;
+}
+#nav-content ul{
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+}
+#nav-content li a{
+  padding: 10px 5px;
+  display: block;
+  text-transform: uppercase;
+  transition: color .1s;
+}
+#nav-content li a:hover{
+  color: #BF7497;
+}
+#nav-content li:not(.small) + .small{
+  margin-top: auto;
+}
+.small{
+  display: flex;
+  align-self: center;
+}
+.small a{
+  font-size: 14px;
+  font-weight: 400;
+  color: #0f0e0e;
+}
+.small a + a{
+  margin-left: 15px;
+}
+#nav-container:focus-within #nav-content{
+  transform: none;
+}
+
+
+
+.len{
+  width: 100%;
+  height: 70px;
+  background-color:#ff0000;
+
+}
+
+
+.header1{
+  font-size: 20px;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  background: #fffb00;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.o{
+  width: 25%;
+  height: 20%;
+  padding: auto;
+  background-color: #fdfdfd;
+}
+
+
+
+
+
+.matem{
+	text-align: center;
+	border-radius: 10px;
+	justify-content: center;
+	float: left;
+	margin-left: 30px;
+	font-size: 40x;
+	margin-top: 16%;
+	width: 28%;
+	height: 60%;
+	background-image: url(https://i.pinimg.com/originals/f7/af/64/f7af64ee0ba6ecca7ab756c61b6677f1.gif);
+	background-size: cover;
+	background-position: center;
+	color: #000;
+	border: 1px solid black;
+}
+
+
+.inglis{
+	text-align: center;
+	border-radius: 10px;
+	justify-content: center;
+	float: left;
+	margin-left: 30px;
+	font-size: 40x;
+	margin-top: 16%;
+	width: 28%;
+	height: 60%;
+	background-image: url(https://cdn.dribbble.com/users/1888142/screenshots/3807817/media/78bd731031be7a83133aae893c4ac333.gif);
+	background-size: cover;
+	background-position: center;
+	color: #000;
+	border: 1px solid black;
+}
+
+.bio{
+	text-align: center;
+	border-radius: 10px;
+	justify-content: center;
+	float: left;
+	margin-left: 30px;
+	font-size: 40x;
+	margin-top: 16%;
+	width: 28%;
+	height: 60%;
+	background-image: url(https://i.pinimg.com/originals/66/26/af/6626af4bd1880a6e43d6417888ae67f8.gif);
+	background-size: cover;
+	background-position: center;
+	color: #ffffff;
+	border: 1px solid black;
+}
+
+.rus{
+	text-align: center;
+	border-radius: 10px;
+	justify-content: center;
+	float: left;
+	margin-left: 30px;
+	font-size: 40x;
+	text-align: center;
+	margin-top: 16%;
+	width: 28%;
+	height: 60%;
+	background-image: url(https://img.likeness.ru/12/08/12085/1360484663.gif);
+	background-size: cover;
+	background-position: center;
+	color: #ffffff;
+	border: 1px solid black;
+}
+
+
+.uzb{
+	text-align: center;
+	border-radius: 10px;
+	justify-content: center;
+	float: left;
+	margin-left: 30px;
+	font-size: 40x;
+	margin-top: 16%;
+	width: 28%;
+	height: 60%;
+	background-image: url(https://static.timesofisrael.com/blogs/uploads/2021/07/Portrait-of-Navoi.jpg);
+	background-size: cover;
+	background-position: center;
+	color: #ffffff;
+	border: 1px solid black;
+}
+
+
+.qazaq{
+	text-align: center;
+	border-radius: 10px;
+	justify-content: center;
+	float: left;
+	margin-left: 30px;
+	font-size: 40x;
+	margin-top: 16%;
+	width: 28%;
+	height: 60%;
+	background-image: url(https://ru-static.z-dn.net/files/d99/1969d556fa6e7901bd58bbcb8c654a11.jpg);
+	background-size: cover;
+	background-position: center;
+	color: #ffffff;
+	border: 1px solid black;
+}
+
+.infor{
+	text-align: center;
+	border-radius: 10px;
+	justify-content: center;
+	float: left;
+	margin-left: 30px;
+	font-size: 40x;
+	margin-top: 16%;
+	width: 28%;
+	height: 60%;
+	background-image: url(https://i.gifer.com/embedded/download/OBV5.gif);
+	background-size: cover;
+	background-position: center;
+	color: #ffffff;
+	border: 1px solid black;
+}
+
+.jismony{
+	border-radius: 10px;
+	text-align: center;
+	justify-content: center;
+	float: left;
+	margin-left: 30px;
+	font-size: 40x;
+	margin-top: 16%;
+	width: 28%;
+	height: 60%;
+	background-image: url(https://i.pinimg.com/originals/30/61/07/3061076a7e51c558bd9cc011fdf540fb.gif);
+	background-size: cover;
+	background-position: center;
+	color: #ffffff;
+	border: 1px solid black;
+}
+
+.qazaqtarih{
+	text-align: center;
+	border-radius: 10px;
+	justify-content: center;
+	float: left;
+	margin-left: 30px;
+	font-size: 40x;
+	margin-top: 16%;
+	width: 28%;
+	height: 60%;
+	background-image: url(https://adebiportal.kz/upload/318/2021/08/30/0f0e7a4a0031a525eb1829925342f128.jpg);
+	background-size: cover;
+	background-position: center;
+	color: #ffffff;
+	
+	border: 1px solid black;
+}
+
+.geo{
+	text-align: center;
+	border-radius: 10px;
+	justify-content: center;
+	float: left;
+	margin-left: 30px;
+	font-size: 40x;
+	margin-top: 16%;
+	width: 28%;
+	height: 60%;
+	background-image: url(https://portal.edu.asu.ru/pluginfile.php/565914/course/overviewfiles/globe-36.gif);
+	background-size: cover;
+	background-position: center;
+	color: #ffffff;
+	border: 1px solid black;
+}
+
+.mehnat{
+	text-align: center;
+	border-radius: 10px;
+	justify-content: center;
+	float: left;
+	margin-left: 30px;
+	font-size: 40x;
+	margin-top: 16%;
+	width: 28%;
+	height: 60%;
+	background-image: url(https://thumbs.gfycat.com/OffbeatPotableDrafthorse-size_restricted.gif);
+	background-size: cover;
+	background-position: center;
+	color: #000;
+	border: 1px solid black;
+}
+
+.fiz{
+	text-align: center;
+	border-radius: 10px;
+	justify-content: center;
+	float: left;
+	margin-left: 30px;
+	font-size: 40x;
+	margin-top: 16%;
+	width: 28%;
+	height: 60%;
+	background-image: url(https://scienceaid.net/images/e/e1/Yassora_AtomGif.gif);
+	background-size: cover;
+	background-position: center;
+	border: 1px solid black;
+	color: #000;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

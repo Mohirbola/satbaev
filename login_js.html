@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<style>
+  .a{
+    background-color: aqua;
+    border-radius: 4px;
+    transition: 1s;
+    text-decoration: none;
+    color: red;
+    text-align: center;
+    
+  }
+
+  .a:hover{
+    padding: 10px;
+    background-color: red;
+    color: aqua;
+  }
+</style>
+
+Login: <input type="text" id="myEmail" value="admin">
+<br>
+Password: <input type="password" id="myPassword" value="admin">
+<br>
+
+<button onclick="myFunction()">Tekshirish</button>
+<a  id="demo1" style="color: red; font-size: 20px; font-family: arial; "></a>
+<br>
+<br>
+<a href="qs.html" class="a" id="demo" ></a>
+
+
+<script>
+
+function myFunction() {
+  var x = document.getElementById("myEmail").value;
+  const y = document.getElementById("myPassword").value;
+  if (x == 'admin' && y=='admin'){
+  	document.getElementById("demo").innerHTML = 'saytga hush kelibsiz';
+  }else{
+    document.getElementById("demo1").innerHTML = 'login yoki parol hato';}
+  
+}
+
+</script>
+
+</body>
+</html>
